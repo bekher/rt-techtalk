@@ -19,6 +19,9 @@ asmlinkage long (*original_write)(unsigned int, const char __user *, size_t);
 
 // the hijacked write
 asmlinkage long new_write(unsigned int fd, const char __user *buf, size_t count) {
+
+    printk(KERN_ALERT "pwnd\n");
+
     // YOUR CODE HERE!
     // what should we return? 
 }
