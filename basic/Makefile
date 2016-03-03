@@ -1,4 +1,4 @@
-obj-m += myrtk.o
+obj-m += myrootkit.o
 
 all:
     make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
