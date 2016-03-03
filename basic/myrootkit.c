@@ -31,13 +31,13 @@ static int init(void) {
 
     printk(KERN_ALERT "Entering the kernel\n");
 
- 	// disable write protection, flip bit 5
+ 	// disable write protection, flip bit
     write_cr0 (read_cr0 () & (~ 0x10000));
     
     // YOUR CODE HERE!
     // hint: you do the hook here
 
- 	// enable write protection, flip bit 5
+ 	// enable write protection, flip bit
     write_cr0 (read_cr0 () | 0x10000);
 
     return 0;
